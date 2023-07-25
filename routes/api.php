@@ -20,7 +20,7 @@ use App\Http\Controllers\AuthController;
 */
 // Public routes
 //session route
-Route::middleware('api-session')->post('change_currency_rate',[AdminController::class,'ChangeCurrency']);
+Route::middleware('api-session')->post('change_currency_rate', [AdminController::class, 'ChangeCurrency']);
 
 // Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
@@ -29,7 +29,7 @@ Route::get('/products', [ProductController::class, 'index']);
 Route::get('/popular', [ProductController::class, 'popular']);
 Route::get('/trending', [ProductController::class, 'trending']);
 Route::get('/upcoming', [ProductController::class, 'upcoming']);
-Route::get('product/{slug}',[ProductController::class,'ProductView']);
+Route::get('product/{slug}', [ProductController::class, 'ProductView']);
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/brands', [CategoryController::class, 'AllBrands']);
 Route::get('/get_products', [ProductController::class, 'get_products']);
@@ -64,19 +64,19 @@ Route::get('/search_lists', [ApiController::class, 'Searchlist']);
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/me', [AuthController::class, 'me']);
     Route::post('/logout', [AuthController::class, 'logout']);
-    Route::post('comments_save',[AdminController::class,'CommentsSave'])->name('comments.store');
-     Route::post('blogcommentsave',[ReviewController::class,'bogCommentsSave']);
-     Route::post('save-likedislike',[ProductController::class,'save_likedislike']);
-     Route::post('blogsave-likedislike',[ReviewController::class,'blogsave_likedislike']);
+    Route::post('comments_save', [AdminController::class, 'CommentsSave'])->name('comments.store');
+    Route::post('blogcommentsave', [ReviewController::class, 'bogCommentsSave']);
+    Route::post('save-likedislike', [ProductController::class, 'save_likedislike']);
+    Route::post('blogsave-likedislike', [ReviewController::class, 'blogsave_likedislike']);
 });
 
 
-Route::get('ads',[ApiController::class,'Ads']);
-Route::get('roles',[ApiController::class,'roles']);
-Route::post('register',[AuthController::class,'user_register']);
-Route::post('send_message',[ApiController::class,'send_message']);
+Route::get('ads', [ApiController::class, 'Ads']);
+Route::get('roles', [ApiController::class, 'roles']);
+Route::post('register', [AuthController::class, 'user_register']);
+Route::post('send_message', [ApiController::class, 'send_message']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-
 });
 Route::get('sitemap', [ApiController::class, 'generate']);
+//changes
