@@ -1,0 +1,327 @@
+/*abdulrehman*/
+.range_slider_container {
+  background-image: url("file:///E:/salam/%23softliee/images/banner/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid transparent;
+  border-radius: 40px;
+}
+.range_slider_sub_container {
+  border: 1px solid transparent;
+}
+/* ranger slider 1 css*/
+.the_slider {
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+}
+.middle {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
+}
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, white, white);
+}
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #6051d5, #d52f51);
+}
+.slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.slider > .thumb.left {
+  left: 25%;
+  transform: translate(-15px, -10px);
+}
+.slider > .thumb.right {
+  right: 25%;
+  transform: translate(15px, -10px);
+}
+.slider > .thumb.hover {
+  box-shadow: 0 0 0 20px rgb(255, 255, 255, 0.1);
+}
+.slider > .thumb.active {
+  box-shadow: 0 0 0 20px rgb(255, 255, 255, 0.1);
+}
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+/* ranger slider 1 css end */
+.col_20p {
+  width: 20%;
+}
+.font_style1 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 3px solid #ee2835;
+}
+
+/* ranger slider 2 css*/
+.the_slider2 {
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+}
+.middle2 {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+.slider2 {
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
+}
+.slider2 > .track2 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #4958ef, #4958ef);
+}
+.slider2 > .range2 {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, gray, gray);
+}
+.slider2 > .thumb2 {
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  background-color: #4958ef;
+  border: 3px solid white;
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.slider2 > .thumb2.left2 {
+  left: 25%;
+  transform: translate(-15px, -10px);
+}
+.slider2 > .thumb2.right2 {
+  right: 25%;
+  transform: translate(15px, -10px);
+}
+.slider2 > .thumb2.hover2 {
+  background-color: #4958ef;
+}
+.slider2 > .thumb2.active2 {
+  background-color: #4958ef;
+}
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+.slider2 {
+  margin: 0px;
+}
+/* ranger slider 2 css end */
+.btn-purple {
+  background-color: #4958ef;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  max-width: 100%;
+  min-width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ram_btn {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  width: 60px;
+  height: 40px;
+  background-color: white;
+}
+.ram_btn_active {
+  background-color: #ee2835;
+  border-color: #ee2835;
+  color: white;
+}
+.ram_text {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(112, 112, 112);
+  font-family: Manrope;
+}
+.brand_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 320px;
+}
+.brand_btn {
+  width: 200px;
+  border-left: 1px solid lightgray;
+  margin-bottom: 8px;
+  font-weight: bold;
+  padding-top: 9px;
+  padding-bottom: 16px;
+  font-size: 20px;
+}
+.brand_btn_active {
+  color: #ee2835;
+}
+.mlc {
+  padding-left: 100px;
+}
+.max_w80p {
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.max_w70p {
+  max-width: 70%;
+  overflow: hidden;
+}
+.flex_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 0;
+  width: 280px;
+  height: 380px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+.name_mobile {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.mobile_btn {
+  padding: 2px 30px !important;
+}
+.mobile_price {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.subscribe_btn {
+  border-color: transparent !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  color: white;
+  background-image: linear-gradient(to right, #6051d5, #d52f51);
+}
+
+.subscribe_input {
+  border-color: transparent !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.font_style1_move {
+  margin-left: 30px !important;
+}
+.mobile_btn2 {
+  padding: 6px 100px !important;
+  border-radius: 0;
+}
+
+.flex_mobile2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 0;
+  width: 380px;
+  height: 280px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}

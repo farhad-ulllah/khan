@@ -1,0 +1,31 @@
+.heading_with_border_left {
+  border-left: 4px solid #ee2835;
+  font-weight: bold;
+  padding: 0px 0px 0px 16px;
+  font-size: 26px;
+}
+.border_less_heading {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.normal_paragraph {
+  font-size: 22px;
+  font-weight: medium;
+}
+.spacer_custom_10 {
+  height: 10px;
+  width: 100%;
+}
+.spacer_custom_20 {
+  height: 20px;
+  width: 100%;
+}
+.spacer_custom_30 {
+  height: 30px;
+  width: 100%;
+}
+.spacer_custom_50 {
+  height: 50px;
+  width: 100%;
+}
